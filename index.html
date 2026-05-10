@@ -1,40 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tetris Game</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tetris</title>
 
-  <div class="game-container">
-    <div class="left-panel">
-      <h1>TETRIS</h1>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-      <div class="score-box">
-        <div>Score</div>
-        <span id="score">0</span>
-      </div>
+body{
+  background:#111;
+  color:white;
+  font-family:Arial,sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
 
-      <div class="score-box">
-        <div>Lines</div>
-        <span id="lines">0</span>
-      </div>
-
-      <div class="controls">
-        <h2>操作方法</h2>
-        <p>← → : 移動</p>
-        <p>↑ : 回転</p>
-        <p>↓ : 高速落下</p>
-        <p>Space : 一気に落下</p>
-      </div>
-    </div>
-
-    <canvas id="tetris" width="300" height="600"></canvas>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+.game-container{
 </html>
